@@ -42,10 +42,19 @@ Bugfix branches should be branched from production. They are where bug fixes sho
 
 Bugfix branches should start with `bugfix/`, followed by the GitHub issue number and a brief
 description of the bug. Example:
-<br /> `bugfix/#33_rate_limit_crashes_server`
+<br /> `bugfix/#33_rate_limit_crashes_client`
 
 Bugfix branches should first be merged into Staging, to test and ensure they will not break
 the rest of the system, then they should be merged into Production, where they will be deployed.
 All tests and checks should pass before merging.
 
 ### Hotfix
+Hotfix branches are where especially urgent fixes should be developed, since hotfix branches
+are the only way to merge code directly into production without testing it in staging first.
+
+Hotfix branches start with `hotfix/`, followed by the GitHub issue number, and
+a brief description of the issue being fixed. Example:
+<br /> `hotfix/#34_remote_code_execution`
+
+Hotfixes should be merged directly into production. They should also be merged into staging, to
+ensure that both branches are equal, but changes should go to production first.
