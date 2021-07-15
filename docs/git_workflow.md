@@ -58,3 +58,13 @@ a brief description of the issue being fixed. Example:
 
 Hotfixes should be merged directly into production. They should also be merged into staging, to
 ensure that both branches are equal, but changes should go to production first.
+
+## Commit Messages
+Commit messages are very important. They tell other developers what you did without
+them having to read all the changes you made. Commit messages should be in the form:
+
+`#<GitHub issue number>: <Description of what you did>`
+IE:
+```
+#15: Added endpoints for adding/removing users
+```
