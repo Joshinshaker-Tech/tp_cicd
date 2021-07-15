@@ -24,6 +24,7 @@ should be merged from a feature, bugfix, or hotfix branch.
 
 Staging should never be directly deployed into Production. Instead, the feature, bugfix, 
 and hotfix branches should be manually merged into production after they've been tested.
+
 ### Feature
 Feature branches should be branched from the Production branch. They are where
 active development of new features or improvements to existing features should take place.
@@ -37,5 +38,14 @@ break the rest of the system, then they should be merged into Production, where 
 will be deployed. All tests and checks should pass before merging.
 
 ### Bugfix
+Bugfix branches should be branched from production. They are where bug fixes should be developed.
+
+Bugfix branches should start with `bugfix/`, followed by the GitHub issue number and a brief
+description of the bug. Example:
+<br /> `bugfix/#33_rate_limit_crashes_server`
+
+Bugfix branches should first be merged into Staging, to test and ensure they will not break
+the rest of the system, then they should be merged into Production, where they will be deployed.
+All tests and checks should pass before merging.
 
 ### Hotfix
