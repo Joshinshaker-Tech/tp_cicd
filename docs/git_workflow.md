@@ -65,6 +65,10 @@ them having to read all the changes you made. Commit messages should be in the f
 
 `#<GitHub issue number>: <Description of what you did>`
 IE:
-```
-#15: Added endpoints for adding/removing users
-```
+
+`#15: Added endpoints for adding/removing users`
+
+
+## Merging
+All merging must be done via a pull request. All pull requests must pass github actions.
+All merges to production must have been deployed to staging and tested, except hotfixes.
