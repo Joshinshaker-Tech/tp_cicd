@@ -1,5 +1,4 @@
 # Documentation Index
 
-[Git Workflow](docs/git_workflow.md)
-
-[Tickets](docs/tickets.md)
+- [Git Workflow](docs/git_workflow.md)
+- [Tickets](docs/tickets.md)
