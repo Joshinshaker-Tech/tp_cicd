@@ -64,6 +64,7 @@ Commit messages are very important. They tell other developers what you did with
 them having to read all the changes you made. Commit messages should be in the form:
 
 `#<GitHub issue number>: <Description of what you did>`
+
 IE:
 
 `#15: Added endpoints for adding/removing users`
