@@ -1,6 +1,6 @@
-# JMT CI/CD Workflow
+# jmt_cicd Workflow
 
-JMT uses our custom workflow for our CI/CD projects, as described below.
+JMT uses our custom workflow (known as jmt_cicd) for our CI/CD projects, as described below.
 
 ## Branches:
 ### Production
