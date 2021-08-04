@@ -1,6 +1,6 @@
 # jmt_cicd Workflow
 
-JMT uses our custom workflow (known as jmt_cicd) for our CI/CD projects, as described below.
+JMT uses our custom workflow based on github flow (known as jmt_cicd) for our CI/CD projects, as described below.
 
 ## Branches:
 ### main
