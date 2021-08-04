@@ -40,8 +40,7 @@ Hotfix branches start with `hotfix/`, followed by the GitHub issue number, and
 a brief description of the issue being fixed. Example:
 <br /> `hotfix/#34_remote_code_execution`
 
-Hotfixes should be merged directly into production. They should also be merged into staging, to
-ensure that both branches are equal, but changes should go to production first.
+Hotfixes should be merged directly into production.
 
 ## Commit Messages
 Commit messages are very important. They tell other developers what you did without
