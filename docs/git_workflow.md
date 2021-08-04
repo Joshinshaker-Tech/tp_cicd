@@ -3,27 +3,11 @@
 JMT uses our custom workflow (known as jmt_cicd) for our CI/CD projects, as described below.
 
 ## Branches:
-### Production
-The production branch is the main branch in the repository. Code in this branch is 
-automatically deployed into the production environment. 
+### main
+The main branch is where code can be deployed into the production or staging environment. 
 
-Commits should never  be directly added to this branch. Instead, commit within 
-a feature, bugfix, or hotfix branch, merge into staging for testing (where required)
-and then merge into production. 
-
-Code should only be merged into this branch when it has been properly tested and
-determined to be stable. As such, this branch is considered stable.
-
-### Staging
-Code in the staging branch is automatically rolled out to the staging environment for testing.
-Code should be merged into the staging branch to be tested when the developer feels it is 
-ready to be deployed.
-
-As with production, code should never be directly committed to this branch, instead, it
-should be merged from a feature, bugfix, or hotfix branch.
-
-Staging should never be directly deployed into Production. Instead, the feature, bugfix, 
-and hotfix branches should be manually merged into production after they've been tested.
+Code deployment is handled by git tags. Commits tagged with `production` will be moved to production, 
+and commits tagged with `staging` will be moved to staging.
 
 ### Feature
 Feature branches should be branched from the Production branch. They are where
