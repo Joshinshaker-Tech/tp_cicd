@@ -6,9 +6,8 @@ JMT uses our custom workflow based on github flow (known as jmt_cicd) for our CI
 ### main
 The main branch is where code can be deployed into the production or staging environment. 
 
-Code deployment is handled by git tags. Commits tagged with `production` will be moved to production, 
-and commits tagged with `staging` will be moved to staging.
-
+Code in this branch is automatically applied with the `PRODUCTION` tag and deployed to the production environment.
+To deploy to other environments, git tags such as `STAGING` can be applied on any branch.
 ### Feature
 Feature branches should be branched from the Production branch. They are where
 active development of new features or improvements to existing features should take place.
